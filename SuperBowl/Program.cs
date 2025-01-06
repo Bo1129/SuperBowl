@@ -10,7 +10,18 @@
             {
                 dontok.Add(new Donto(sor));
             }
+            //4.
             Console.WriteLine($"4.feladat: Döntők száma: {dontok.Count}");
+            //5.
+            int pontkulonbseg = 0;
+            foreach (var d in dontok)
+            {
+                string[] e = d.Eredmeny.Split('-');
+                pontkulonbseg += Math.Abs(int.Parse(e[0]) - int.Parse(e[1]));
+   
+            }
+            double atlag = (double)pontkulonbseg / dontok.Count;
+            Console.WriteLine($"5. feladat: Átlagos pontkülönbség: {atlag:0.0}");
         }
     }
 }
