@@ -22,6 +22,10 @@
             }
             double atlag = (double)pontkulonbseg / dontok.Count;
             Console.WriteLine($"5. feladat: Átlagos pontkülönbség: {atlag:0.0}");
+           
+            RomaiSorszam r = new(dontok[20].SSz);
+            Console.WriteLine(r.ArabSsz);
+
         }
     }
 }
