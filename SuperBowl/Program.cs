@@ -10,6 +10,7 @@
             {
                 dontok.Add(new Donto(sor));
             }
+            Console.WriteLine($"4.feladat: Döntők száma: {dontok.Count}");
         }
     }
 }
