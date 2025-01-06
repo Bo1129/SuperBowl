@@ -4,7 +4,12 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            //Beolvasás
+            List<Donto> dontok = new();
+            foreach (var sor in File.ReadAllLines("SuperBowl.txt").Skip(1))
+            {
+                dontok.Add(new Donto(sor));
+            }
         }
     }
 }
